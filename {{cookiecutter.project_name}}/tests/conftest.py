@@ -15,8 +15,7 @@ register(UserFactory)
 @pytest.fixture(scope="session")
 def app():
     load_dotenv(".testenv")
-    app = create_app(testing=True)
-    return app
+    return create_app(testing=True)
 
 
 @pytest.fixture
